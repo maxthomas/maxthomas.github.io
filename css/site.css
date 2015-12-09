@@ -1,0 +1,162 @@
+.wrapper {
+    margin: auto;
+    max-width: 1024px;
+    padding: 3em 6.25em;
+}
+
+html, body {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    background: url('../png/bkgd-1920-1080.png') top no-repeat fixed;
+    background-size: cover;
+
+}
+
+header {
+    height: 72vh;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header h2 {
+    font-size: 3.5em;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+
+header h3 {
+    font-size: 1.5em;
+    font-weight: 400;
+    padding: 0 0 0 2px;
+    margin: 0;
+    padding: 0;
+}
+
+header ul {
+    margin: 0 0 0 -5px;
+    padding: 5em 0 0 0;
+}
+
+header ul li {
+    display: inline;
+}
+
+header ul li a {
+    color: #fff;
+    font-size: 2.75em;
+    padding: 0 0.25em 0 0;
+}
+
+header ul li a .fa-square {
+    color: rgba(255, 255, 255, 0.05);
+}
+
+header ul li a:hover .fa-square {
+    color: rgba(255, 255, 255, 0.65);
+}
+
+section {
+    text-align: center;
+    background: #fff;
+}
+
+section > .wrapper > h2 {
+    color: #5a5a5a;
+    font-size: 3.25em;
+    font-weight: 300;
+}
+
+section > .wrapper > p {
+    color: #999;
+    font-size: 1.25em;
+    font-weight: 300;
+    margin-top: 1.00em;
+}
+
+section ul {
+    list-style-type: none;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+section ul > li {
+    display: inline-block;
+    padding: 2em 1em;
+    vertical-align: top;
+    width: 42%;
+}
+
+section ul > li > h3 {
+    color: #777;
+    font-size: 1.75em;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+section ul > li > p {
+    color: #999;
+    font-size: 1.25em;
+    font-weight: 200;
+    margin-top: 0.5em;
+}
+
+section a {
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    height: 30vh;
+}
+
+footer .wrapper {
+    font-size: 1.25em;
+    font-weight: 700;
+    padding: 4em;
+}
+
+section + section {
+    border-top: 1px solid #ddd;
+}
+
+@media (max-width: 1024px) {
+    .wrapper { padding: 5em 4em; }
+
+    section ul > li {
+        width: 95%;
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper { padding: 5em 3em; }
+    html { font-size: 14px; }
+}
+
+@media (max-width: 414px) {
+    .wrapper { padding: 5em 2em; }
+    header h2 { font-size: 2.5em; padding: 0; }
+}
+
+@media (max-height: 768px) {
+    header { height: 100vh; }
+}
+
+@media (orientation: portrait) and (max-width: 1024px) {
+    header {
+        -webkit-background-size: auto 150%;
+        background-attachment: scroll;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 1024px) {
+    header {
+        -webkit-background-size: 150% auto;
+        background-attachment: scroll;
+    }
+}
